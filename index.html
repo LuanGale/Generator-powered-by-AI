@@ -5,45 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Generator</title>
 
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Generator powered by AI</h1>
+    <div class="container">
+      <h1>Generator powered by AI</h1>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter an ingredient..."
-          id="search-input"
-          autofocus
-          autocomplete="off"
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div id="result"></div>
-    </main>
-    <footer>
-      <p>
-        Coded by
-        <a href="https://github.com/LuanGale" target="_blank">Luan Gale</a>
-        and is open-sourced on
-        <a
-          href="https://github.com/LuanGale/Generator-powered-by-AI"
-          target="_blank"
-        >
-          GitHub</a
-        >
-        and hosted on
-        <a href="https://recipesgeneratorai.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </p>
-    </footer>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter an ingredient..."
+            class="search-input"
+            id="search-input"
+            autofocus
+            autocomplete="off"
+            required
+          />
+          <input
+            type="submit"
+            value="Search"
+            id="search-button"
+            class="search-button"
+          />
+        </form>
+        <div id="result" class="result"></div>
+      </main>
+
+      <footer>
+        <p>
+          Coded by
+          <a href="https://github.com/LuanGale" target="_blank">Luan Gale</a>
+          and is open-sourced on
+          <a
+            href="https://github.com/LuanGale/Generator-powered-by-AI"
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted on
+          <a href="https://recipesgeneratorai.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
