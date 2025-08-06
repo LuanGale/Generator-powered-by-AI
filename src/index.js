@@ -18,7 +18,7 @@ function generateRecipe(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let delayAnswer = document.querySelector("#result");
-  delayAnswer.innerHTML = "Generating a recipe for you.. please wait";
+  delayAnswer.innerHTML = `Generating a recipe with ${ingredientInput.value}... please wait`;
   axios.get(apiUrl).then(answerRecipe);
 }
 
