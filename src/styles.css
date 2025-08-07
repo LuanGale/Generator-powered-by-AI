@@ -54,8 +54,7 @@ main {
   text-align: center;
   font-size: 16px;
   color: #272343;
-  margin: 15px;
-  margin-top: 0;
+  margin: 0 15px;
   padding: 10px;
 }
 
