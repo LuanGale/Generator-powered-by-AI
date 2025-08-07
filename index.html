@@ -19,24 +19,27 @@
     <div class="container">
       <h1>Simple Recipe Generator</h1>
       <main>
-        <form id="generator-form">
-          <input
-            type="text"
-            placeholder="Enter an ingredient... (i.e: chicken, onion)"
-            class="search-input"
-            id="search-input"
-            autofocus
-            autocomplete="off"
-            required
-          />
-          <input
-            type="submit"
-            value="Search"
-            id="search-button"
-            class="search-button"
-          />
-        </form>
-        <div id="result" class="result"></div>
+        <div class="form-wrapper">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter an ingredient..."
+              class="search-input"
+              id="search-input"
+              autofocus
+              autocomplete="off"
+              required
+            />
+            <input
+              type="submit"
+              value="Search"
+              id="search-button"
+              class="search-button"
+            />
+          </form>
+          <small>For example: chicken, onion, tofu</small>
+        </div>
+        <div id="result" class="result hidden"></div>
       </main>
 
       <footer>
